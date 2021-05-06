@@ -1,1 +1,3 @@
-# UCHIHA: Unsika ChitChat
+# UCHIHA: Unsika ChitChatgit
+
+RASA ini sungguha tak wajar
