@@ -3,90 +3,124 @@ version: "2.0"
 nlu:
 - intent: greet
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - Hai
+    - Halo
+    - Assalamualaikum
+    - Shalom
 
 - intent: goodbye
   examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - Dadah
+    - Bye
+    - sampai nanti
+    - sampai jumpa
 
 - intent: affirm
   examples: |
     - yes
+    - ya
+    - tentu
+    - dengan senang hati
     - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - enya
+    - heeh
+    - hooh
+
 
 - intent: deny
   examples: |
     - no
     - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - tidak
+    - t
+    - enggak
+    - ndak
+    - henteu
+    - nteu
 
 - intent: mood_great
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - Baik Sekali
+    - Sempurna
+    - Lebih baik dari Biasanya
+    - Tak pernah sebaik ini
 
 - intent: mood_unhappy
   examples: |
+    - Aku sedih
+    - Aku sangat sedih
+    - Aku tidak bahagia
+    - Aku sedang tidak baik
     - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - Sedih
 
 - intent: bot_challenge
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - Apakah kamu bot?
+    - Apakah kamu manusia?
+    - Dengan siapa aku berbicara?
+    - ngomong sama siapa?
+    - ngomong sama manusia?
+    - ngomong sama orang?
+    - apakah kamu orang?
+- intent: unsika_place
+  examples: |
+    - Dimana unsika?
+    - Unsika Dimana sih?
+    - Dimanakah gerangan aku bisa menemukan unsika?
+    - unsika ada?
+
+- intent: unsika_jurusan
+  examples: |
+    - ada berapa jurusan di unsika
+    - banyak jurusan unsika
+
+- intent: unsika_anjay
+  examples: |
+    - anjay
+    - unsika anjay
+    - jir
+    - bjir
+    - anjir
+
+- intent: unsika pendiri
+  examples: |
+    - siapa pendiri unsika?
+    - unsika didirikan oleh?
+    - yang ngebuat unsika siapa sih?
+    - pembuat unsika?
+
+- intent: unsika rektor 
+  examples: |
+    - siapa rektor unsika?
+    - bapa rektor?
+    - rektor saat ini?
+    - nama rektor sekarang?
+    - rektor?
+
+- intent: unsika pembangunan
+  examples: |
+    - kapan unsika dibangun?
+    - pada tahun berapa unsika didirikan?
+    - pembangun unsika?
+    - unsika dibuat?
+    - kapan unsika diciptakan?
+    - penciptaan unsika?
+
+- intent: unsika negeri
+  examples: |
+    - apakah unsika universitas negeri?
+    - unsika negeri?
+    - sejak kapan unsika negeri?
+    - sudah berapa lama unsika menjadi universitas negeri?
+
+- intent: unsika purpose
+  examples: |
+    - apa sih visi dan misi unsika?
+    - visi misi?
+
+- intent: unsika_liburied2021
+  examples: |
+    - Kapan Unsika libur lebaran 2021?
+    - Kapan masuk libur lebaran 2021?
+    - berapa hari libur lebaran 2021?

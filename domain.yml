@@ -8,26 +8,79 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - unsika_place
+  - unsika_jurusan
+  - unsika_anjay
+  - unsika purpose
+  - unsika pembangunan
+  - unsika rektor
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hai, Bagaimana kabarmu marooners???"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+  - text: "Apakah itu membantumu?"
 
   utter_happy:
-  - text: "Great, carry on!"
+  - text: "Bagus! lanjutkan!"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Dadaaaah, sampai jumpa lagi~"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "Aku adalah bot UCHIHA yang dirancang untuk membantumu mendapatkan informasi seputar Kampus Maroon UNSIKA!"
+
+  utter_place:
+  - text: "Unsika adalah sebuah Universitas NEGERI di Karawang"
+
+  utter_negri:
+  - text: "Unsika Menjadi Universitas Negri sejak 7 Oktober 2014"
+
+  utter_jurusan:
+  - text: "Banyaklah"
+  
+  utter_halamanjurusan:
+  - text: "Cek disini Sir https://unsika.ac.id/akademik/ "
+
+  utter_anjay:
+  - text: "ANJAYYYYYYYYYYYYYYY GASKEUN"
+
+  utter_pendiri:
+  - text: "Pada awalnya unsika merupakan sebuah yayasan yang bernama pangkal perjuangan dan dilam RIP (rencana induk pengembangan) serta dukungan dari pak H.opon sopanji pada tanggal 2 februari 1982 resmilah dibangun universitas singaperbangsa"
+
+  utter_rektor:
+  - text: "Rektorat. Prof. Dr. Sri Mulyani, Ak., CA"
+
+  utter_pembangunan:
+  - text: "unsika didirikan pada tanggal 2 februari 1982"
+
+  utter_negeri:
+  - text: "unsika telah resmi menjadi universitas negeri sejak tahun 2014 lebih tepatnya pada 7 oktober 2014"
+
+  utter_visi:
+  - text: "Inovatif, kompetitif, dan unggul yang dijiwai budaya bangsa"
+
+  utter_misi:
+  - text: "salah satu misi unsika adalah Menyiapkan sumber daya manusia yang profesional dan berakhlak mulia"
+
+  utter_question:
+  - text: "Apakah ada yang bisa saya bantu lagi?"
+
+  utter_liburied2021:
+  - text: "Menurut Surat Edaran rektor Unsika nomor 1146/UN64/SE/2021 Cuti  bersama idul fitri dimulai tanggal 12 Mei 2021 sampai dengan 16 Mei 2021."
+
+  utter_himbauanpandemi:
+  - text: "Dimohon untuk semua warga Unsika mematuhi protokol kesehatan di masing masing daerah dan tetap melaksanakan 3M, terimakasih dan Sehat selalu :)"
+
+  utter_state:
+  - text: "Ya Ndak Tau Kok Tanya Saya"
+  
+  
 
 session_config:
   session_expiration_time: 60
