@@ -45,10 +45,23 @@ stories:
   - intent: unsika_liburied2021
   - action: utter_liburied2021
   - action: utter_himbauanpandemi
+  - action: utter_question
 
-- story: visi misi
+- story: persetujuan
   steps:
-  - intent: unsika purpose
-  - action: utter_visi
-  - action: utter_misi
+  - action: utter_question
+  - intent: affirm
+  - action: utter_tanya
+
+- story: penolakan
+  steps:
+  - action: utter_question
+  - intent: deny
+  - action: utter_akhir
+
+- story: oponloc
+  steps:
+  - intent: unsika oponloc
+  - action: utter_oponloc
+  - action: utter_triviaopon
   - action: utter_question

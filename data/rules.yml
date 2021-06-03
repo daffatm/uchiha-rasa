@@ -17,16 +17,6 @@ rules:
   - intent: unsika_anjay
   - action: utter_anjay
 
-- rule: Pendirian Unsika
-  steps:
-  - intent: unsika pembangunan
-  - action: utter_pembangunan
-
-- rule: rektor
-  steps:
-  - intent: unsika rektor
-  - action: utter_rektor
-
 - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
   steps:
   - intent: nlu_fallback

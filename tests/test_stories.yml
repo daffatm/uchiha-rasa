@@ -5,22 +5,22 @@ stories:
 - story: happy path 1
   steps:
   - user: |
-      hello there!
+      hi
     intent: greet
   - action: utter_greet
   - user: |
-      amazing
+      Baik
     intent: mood_great
   - action: utter_happy
 
 - story: happy path 2
   steps:
   - user: |
-      hello there!
+      hai!
     intent: greet
   - action: utter_greet
   - user: |
-      amazing
+      baik sekali
     intent: mood_great
   - action: utter_happy
   - user: |
@@ -35,7 +35,7 @@ stories:
     intent: greet
   - action: utter_greet
   - user: |
-      not good
+      tidak baik
     intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
@@ -47,16 +47,16 @@ stories:
 - story: sad path 2
   steps:
   - user: |
-      hello
+      halo
     intent: greet
   - action: utter_greet
   - user: |
-      not good
+      aku sedih
     intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
-      not really
+      enggak
     intent: deny
   - action: utter_goodbye
 
@@ -67,12 +67,12 @@ stories:
     intent: greet
   - action: utter_greet
   - user: |
-      very terrible
+      aku sedih
     intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
-      no
+      tidak
     intent: deny
   - action: utter_goodbye
 
@@ -86,6 +86,57 @@ stories:
 - story: bot challenge
   steps:
   - user: |
-      are you a bot?
+      Apakah kamu bot?
     intent: bot_challenge
   - action: utter_iamabot
+
+- story: ingfo unsika
+  steps:
+  - user: |
+      Dimana unsika
+    intent: unsika_place
+  - action: utter_place
+  - action: utter_negri
+  - user: |
+      apa aja jurusan di unsika
+    intent: unsika_jurusan
+  - action: utter_jurusan
+  - action: utter_halamanjurusan
+  - user: |
+      anjay
+    intent: unsika_anjay
+  - action: utter_anjay
+
+- story: libur ied 2021 unsika
+  steps:
+  - user: |
+      kapan libur lebaran bang
+    intent: unsika_liburied2021
+  - action: utter_liburied2021
+  - action: utter_himbauanpandemi
+  - action: utter_question
+
+- story: persetujuan
+  steps:
+  - action: utter_question
+  - user: |
+      y
+    intent: affirm
+  - action: utter_tanya
+
+- story: penolakan
+  steps:
+  - action: utter_question
+  - user: |
+      tidak
+    intent: deny
+  - action: utter_akhir
+
+- story: oponloc
+  steps:
+  - user: |
+      opon dimana sih gedungnya
+    intent: unsika oponloc
+  - action: utter_oponloc
+  - action: utter_triviaopon
+  - action: utter_question

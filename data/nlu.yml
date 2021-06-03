@@ -3,10 +3,12 @@ version: "2.0"
 nlu:
 - intent: greet
   examples: |
-    - Hai
+    - hai
     - Halo
     - Assalamualaikum
     - Shalom
+    - hello
+    - hi
 
 - intent: goodbye
   examples: |
@@ -41,6 +43,7 @@ nlu:
 - intent: mood_great
   examples: |
     - Baik Sekali
+    - baik
     - Sempurna
     - Lebih baik dari Biasanya
     - Tak pernah sebaik ini
@@ -48,10 +51,10 @@ nlu:
 - intent: mood_unhappy
   examples: |
     - Aku sedih
+    - tidak baik
     - Aku sangat sedih
     - Aku tidak bahagia
     - Aku sedang tidak baik
-    - my day was horrible
     - Sedih
 
 - intent: bot_challenge
@@ -63,6 +66,7 @@ nlu:
     - ngomong sama manusia?
     - ngomong sama orang?
     - apakah kamu orang?
+    
 - intent: unsika_place
   examples: |
     - Dimana unsika?
@@ -118,6 +122,12 @@ nlu:
   examples: |
     - apa sih visi dan misi unsika?
     - visi misi?
+
+- intent: unsika oponloc
+  examples: |
+    - dimana gedung opon?
+    - letak opon?
+    - posisi gedung opon?
 
 - intent: unsika_liburied2021
   examples: |
