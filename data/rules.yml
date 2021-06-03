@@ -21,3 +21,13 @@ rules:
   steps:
   - intent: nlu_fallback
   - action: utter_state
+
+- rule: rektor
+  steps:
+  - intent: unsika rektor
+  - action: utter_rektor
+
+- rule: Pendirian Unsika
+  steps:
+  - intent: unsika pembangunan
+  - action: utter_pembangunan
