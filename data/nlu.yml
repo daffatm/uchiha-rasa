@@ -4,16 +4,18 @@ nlu:
 - intent: greet
   examples: |
     - hai
-    - Halo
-    - Assalamualaikum
-    - Shalom
+    - halo
+    - assalamualaikum
+    - shalom
     - hello
     - hi
+    - woy
+    - hoi
 
 - intent: goodbye
   examples: |
-    - Dadah
-    - Bye
+    - dadah
+    - bye
     - sampai nanti
     - sampai jumpa
 
@@ -28,13 +30,14 @@ nlu:
     - heeh
     - hooh
 
-
 - intent: deny
   examples: |
     - no
     - n
     - tidak
     - t
+    - g
+    - gak
     - enggak
     - ndak
     - henteu
@@ -42,42 +45,44 @@ nlu:
 
 - intent: mood_great
   examples: |
-    - Baik Sekali
+    - baik sekali
     - baik
-    - Sempurna
-    - Lebih baik dari Biasanya
-    - Tak pernah sebaik ini
+    - sempurna
+    - lebih baik dari biasanya
+    - tak pernah sebaik ini
 
 - intent: mood_unhappy
   examples: |
-    - Aku sedih
+    - aku sedih
     - tidak baik
-    - Aku sangat sedih
-    - Aku tidak bahagia
-    - Aku sedang tidak baik
+    - aku sangat sedih
+    - aku tidak bahagia
+    - aku sedang tidak baik
     - Sedih
 
 - intent: bot_challenge
   examples: |
-    - Apakah kamu bot?
-    - Apakah kamu manusia?
-    - Dengan siapa aku berbicara?
-    - ngomong sama siapa?
-    - ngomong sama manusia?
-    - ngomong sama orang?
-    - apakah kamu orang?
+    - apakah kamu bot
+    - apakah kamu manusia
+    - dengan siapa aku berbicara
+    - apakah kamu orang
+    - siapa ini
+    - siapa kamu
     
 - intent: unsika_place
   examples: |
-    - Dimana unsika?
-    - Unsika Dimana sih?
-    - Dimanakah gerangan aku bisa menemukan unsika?
-    - unsika ada?
+    - dimana unsika
+    - unsika dimana sih
+    - dimanakah gerangan aku bisa menemukan unsika
+    - unsika ada
+    - lokasi kampus unsika
+    - dimana kampus unsika
 
 - intent: unsika_jurusan
   examples: |
     - ada berapa jurusan di unsika
     - banyak jurusan unsika
+    - jurusan unsika
 
 - intent: unsika_anjay
   examples: |
@@ -89,48 +94,50 @@ nlu:
 
 - intent: unsika pendiri
   examples: |
-    - siapa pendiri unsika?
-    - unsika didirikan oleh?
-    - yang ngebuat unsika siapa sih?
-    - pembuat unsika?
+    - siapa pendiri unsika
+    - unsika didirikan oleh
+    - yang ngebuat unsika siapa sih
+    - pembuat unsika
 
 - intent: unsika rektor 
   examples: |
-    - siapa rektor unsika?
-    - bapa rektor?
-    - rektor saat ini?
-    - nama rektor sekarang?
-    - rektor?
+    - siapa rektor unsika
+    - bapa rektor
+    - rektor saat ini
+    - nama rektor sekarang
+    - rektor
 
 - intent: unsika pembangunan
   examples: |
-    - kapan unsika dibangun?
-    - pada tahun berapa unsika didirikan?
-    - pembangun unsika?
-    - unsika dibuat?
-    - kapan unsika diciptakan?
-    - penciptaan unsika?
+    - kapan unsika dibangun
+    - pada tahun berapa unsika didirikan
+    - pembangun unsika
+    - unsika dibuat
+    - kapan unsika diciptakan
+    - penciptaan unsika
 
 - intent: unsika negeri
   examples: |
-    - apakah unsika universitas negeri?
-    - unsika negeri?
-    - sejak kapan unsika negeri?
-    - sudah berapa lama unsika menjadi universitas negeri?
+    - apakah unsika universitas negeri
+    - unsika negeri
+    - sejak kapan unsika negeri
+    - sudah berapa lama unsika menjadi universitas negeri
+    - unsika kampus negeri
 
 - intent: unsika purpose
   examples: |
-    - apa sih visi dan misi unsika?
-    - visi misi?
+    - apa sih visi dan misi unsika
+    - visi misi
 
 - intent: unsika oponloc
   examples: |
-    - dimana gedung opon?
-    - letak opon?
-    - posisi gedung opon?
+    - dimana lokasi gedung opon
+    - letak opon
+    - posisi gedung opon
+    - lokasi gedung opon
 
 - intent: unsika_liburied2021
   examples: |
-    - Kapan Unsika libur lebaran 2021?
-    - Kapan masuk libur lebaran 2021?
-    - berapa hari libur lebaran 2021?
+    - kapan Unsika libur lebaran 2021
+    - kapan masuk libur lebaran 2021
+    - berapa hari libur lebaran 2021

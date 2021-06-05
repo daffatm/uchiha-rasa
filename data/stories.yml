@@ -8,6 +8,7 @@ stories:
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy
+  - action: utter_askhelp
 
 - story: sad path 1
   steps:
@@ -18,6 +19,7 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
+  - action: utter_askhelp
 
 - story: sad path 2
   steps:
@@ -27,18 +29,51 @@ stories:
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: deny
-  - action: utter_goodbye
+  - action: utter_askhelp
 
-- story: ingfo unsika
+- story: ingfo unsika 1
   steps:
   - intent: unsika_place
   - action: utter_place
-  - action: utter_negri
+  - action: utter_negeri
+  - action: utter_tanyajurusan
+  - intent: affirm
+  - action: utter_jurusan
+  - action: utter_halamanjurusan
+
+- story: ingfo unsika 2
+  steps:
+  - intent: unsika_place
+  - action: utter_place
+  - action: utter_negeri
+  - action: utter_tanyajurusan
+  - intent: deny
+  - action: utter_akhir
+
+- story: tanya rektor
+  steps:
+  - intent: unsika rektor
+  - action: utter_rektor
+  - action: utter_question
+
+- story: Pendirian Unsika
+  steps:
+  - intent: unsika pembangunan
+  - action: utter_pembangunan
+  - action: utter_question
+
+- story: Unsika negeri
+  steps:
+  - intent: unsika negeri
+  - action: utter_negeri
+  - action: utter_question
+
+- story: jurusan unsika
+  steps:
   - intent: unsika_jurusan
   - action: utter_jurusan
   - action: utter_halamanjurusan
-  - intent: unsika_anjay
-  - action: utter_anjay
+  - action: utter_question
 
 - story: libur ied 2021 unsika
   steps:

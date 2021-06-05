@@ -32,10 +32,13 @@ responses:
   - text: "Apakah itu membantumu?"
 
   utter_happy:
-  - text: "Bagus! lanjutkan!"
+  - text: "Bagus!"
 
   utter_goodbye:
   - text: "Dadaaaah, sampai jumpa lagi~"
+
+  utter_askhelp:
+  - text: "Apakah ada yang bisa saya bantu ?"
 
   utter_iamabot:
   - text: "Aku adalah bot UCHIHA yang dirancang untuk membantumu mendapatkan informasi seputar Kampus Maroon UNSIKA!"
@@ -43,8 +46,8 @@ responses:
   utter_place:
   - text: "Unsika adalah sebuah Universitas NEGERI di Karawang"
 
-  utter_negri:
-  - text: "Unsika Menjadi Universitas Negri sejak 7 Oktober 2014"
+  utter_tanyajurusan:
+  - text: "Mau tau jurusan ada jurusan apa aja di Unsika ?"
 
   utter_jurusan:
   - text: "Banyaklah"

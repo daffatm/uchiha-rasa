@@ -1,7 +1,7 @@
-cd app/
+# cd app/
+
+#define port
+echo PORT $PORT
 
 # start rasa server
-rasa run --model /app/models --enable-api --cors "*"\
-        --endpoints /app/endpoints.yml \
-        --credentials /app/credentials.yml \
-        -p $PORT
+rasa run -m app/models/20210603-235542.tar.gz --enable-api --cors "*" --debug -p $PORT 
