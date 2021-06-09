@@ -2,51 +2,48 @@ version: "2.0"
 
 stories:
 
-- story: happy path
+- story: hi path 1
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-  - action: utter_askhelp
-
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+  - action: utter_iamabot
+  - action: utter_ask_help
   - intent: affirm
-  - action: utter_happy
-  - action: utter_askhelp
+  - action: utter_tanya
 
-- story: sad path 2
+- story: hi path 2
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+  - action: utter_iamabot
+  - action: utter_ask_help
   - intent: deny
-  - action: utter_askhelp
+  - action: utter_akhir
+  - action: utter_saran
+
+- story: hi path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_iamabot
+  - action: utter_ask_help
 
 - story: ingfo unsika 1
   steps:
   - intent: unsika_place
   - action: utter_place
   - action: utter_negeri
-  - action: utter_tanyajurusan
+  - action: utter_tanya_jurusan
   - intent: affirm
   - action: utter_jurusan
-  - action: utter_halamanjurusan
+  - action: utter_halaman_jurusan
 
 - story: ingfo unsika 2
   steps:
   - intent: unsika_place
   - action: utter_place
   - action: utter_negeri
-  - action: utter_tanyajurusan
+  - action: utter_tanya_jurusan
   - intent: deny
   - action: utter_akhir
 
@@ -72,14 +69,14 @@ stories:
   steps:
   - intent: unsika_jurusan
   - action: utter_jurusan
-  - action: utter_halamanjurusan
+  - action: utter_halaman_jurusan
   - action: utter_question
 
 - story: libur ied 2021 unsika
   steps:
   - intent: unsika_liburied2021
   - action: utter_liburied2021
-  - action: utter_himbauanpandemi
+  - action: utter_himbauan_pandemi
   - action: utter_question
 
 - story: persetujuan
@@ -93,12 +90,13 @@ stories:
   - action: utter_question
   - intent: deny
   - action: utter_akhir
+  - action: utter_saran
 
 - story: oponloc
   steps:
   - intent: unsika oponloc
   - action: utter_oponloc
-  - action: utter_triviaopon
+  - action: utter_trivia_opon
   - action: utter_question
 
 - story: visi misi
@@ -107,3 +105,17 @@ stories:
   - action: utter_visi
   - action: utter_misi
   - action: utter_question
+
+# - story: Memberi saran
+#   steps:
+#   - intent: saran
+#   - action: saran_form
+#   - active_loop: saran_form
+#   - slot_was_set:
+#     - requested_slot: saran
+#   - slot_was_set:
+#     - saran: saran
+#   - slot_was_set:
+#     - requested_slot: null
+#   - active_loop: null
+#   - action: utter_saran_accepted

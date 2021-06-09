@@ -18,57 +18,54 @@ intents:
   - unsika negeri
   - unsika purpose
   - unsika oponloc
+  - saran
 
+forms:
+  saran_form:
+    required_slots:
+      saran:
+      - type: from_text
+
+slots:
+  saran:
+    type: any
 
 responses:
   utter_greet:
-  - text: "Hai, Bagaimana kabarmu marooners???"
+  - text: "Hai marooners"
 
-  utter_cheer_up:
-  - text: "Coba lihat ini, semoga bisa membantumu:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Apakah itu membantumu?"
-
-  utter_happy:
-  - text: "Bagus!"
-
-  utter_goodbye:
-  - text: "Dadaaaah, sampai jumpa lagi~"
-
-  utter_askhelp:
+  utter_ask_help:
   - text: "Apakah ada yang bisa saya bantu ?"
 
   utter_iamabot:
-  - text: "Aku adalah bot UCHIHA yang dirancang untuk membantumu mendapatkan informasi seputar Kampus Maroon UNSIKA!"
+  - text: "Aku adalah bot UCHIHA yang dirancang untuk membantumu mendapatkan informasi seputar Kampus Maroon Unsika!"
 
   utter_place:
   - text: "Unsika adalah sebuah Universitas NEGERI di Karawang"
 
-  utter_tanyajurusan:
-  - text: "Mau tau jurusan ada jurusan apa aja di Unsika ?"
+  utter_tanya_jurusan:
+  - text: "Mau tau ada jurusan apa aja di Unsika ?"
 
   utter_jurusan:
-  - text: "Banyaklah"
+  - text: "Jurusan di Unsika ada banyak"
   
-  utter_halamanjurusan:
-  - text: "Cek disini Sir https://unsika.ac.id/akademik/ "
+  utter_halaman_jurusan:
+  - text: "Cek lebih lanjut di https://unsika.ac.id/akademik/ "
 
   utter_anjay:
   - text: "ANJAYYYYYYYYYYYYYYY GASKEUN"
 
   utter_pendiri:
-  - text: "Pada awalnya unsika merupakan sebuah yayasan yang bernama pangkal perjuangan dan dilam RIP (rencana induk pengembangan) serta dukungan dari pak H.opon sopanji pada tanggal 2 februari 1982 resmilah dibangun universitas singaperbangsa"
+  - text: "Pada awalnya Unsika merupakan sebuah yayasan yang bernama pangkal perjuangan dan dilam RIP (Rencana Induk Pengembangan) serta dukungan dari pak H. Opon Sopanji pada tanggal 2 Februari 1982 resmilah dibangun universitas singaperbangsa"
 
   utter_rektor:
   - text: "Rektorat. Prof. Dr. Sri Mulyani, Ak., CA"
 
   utter_pembangunan:
-  - text: "unsika didirikan pada tanggal 2 februari 1982"
+  - text: "Unsika didirikan pada tanggal 2 Februari 1982"
 
   utter_negeri:
-  - text: "unsika telah resmi menjadi universitas negeri sejak tahun 2014 lebih tepatnya pada 7 oktober 2014"
+  - text: "Unsika telah resmi menjadi universitas negeri sejak tahun 2014 lebih tepatnya pada 7 oktober 2014"
 
   utter_visi:
   - text: "Inovatif, kompetitif, dan unggul yang dijiwai budaya bangsa"
@@ -82,7 +79,7 @@ responses:
   utter_liburied2021:
   - text: "Menurut Surat Edaran rektor Unsika nomor 1146/UN64/SE/2021 Cuti  bersama idul fitri dimulai tanggal 12 Mei 2021 sampai dengan 16 Mei 2021. https://www.instagram.com/p/COh7amlMawF/?utm_source=ig_web_copy_link"
 
-  utter_himbauanpandemi:
+  utter_himbauan_pandemi:
   - text: "Dimohon untuk semua warga Unsika mematuhi protokol kesehatan di masing masing daerah dan tetap melaksanakan 3M, terimakasih dan Sehat selalu :)"
 
   utter_akhir:
@@ -99,9 +96,18 @@ responses:
   - text: "Ya Ndak Tau Kok Tanya Saya"
     image: "https://pbs.twimg.com/profile_images/1396876823510753283/5mVZKRhf_400x400.jpg"
 
-  utter_triviaopon:
+  utter_trivia_opon:
   - text: "Gedung H. Opon Sopandji atau biasa disebut gedung opon berasal dari nama bupati karawang tk.II yaitu H. Opon Sopandji yang mendukung perkembangan Unsika menjadi sebuah universitas pada tahun 1982 yang sebelumnya Sekolah Tinggi Hukum Pangkal Perjuangan"
+
+  utter_saran:
+  - text: "Berikan masukan atau saran untuk UCHIHA dengan mengetik 'saran'. Masukan darimu sangat membantu untuk UCHIHA"
+  
+  utter_saran_accepted:
+  - text: "Saranmu telah aku terima, aku akan selalu mencoba untuk menjadi lebih baik"
+
+  utter_ask_saran:
+  - text: "Berikan masukan atau saran untuk UCHIHA, kamu juga bisa request fitur loh"
 
 session_config:
   session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  carry_over_slots_to_new_session: false

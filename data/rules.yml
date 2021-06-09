@@ -5,7 +5,8 @@ rules:
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
-  - action: utter_goodbye
+  - action: utter_akhir
+  - action: utter_saran
 
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
@@ -17,7 +18,23 @@ rules:
   - intent: unsika_anjay
   - action: utter_anjay
 
-- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+- rule: Pesan default saat pesan memiliki low confidence
   steps:
   - intent: nlu_fallback
   - action: utter_state
+
+- rule: Activate form saran
+  steps:
+  - intent: saran
+  - action: saran_form
+  - active_loop: saran_form
+
+- rule: Submit form saran
+  condition:
+  - active_loop: saran_form
+  steps:
+  - action: saran_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_saran_accepted

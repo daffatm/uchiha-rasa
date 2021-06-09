@@ -11,6 +11,7 @@ nlu:
     - hi
     - woy
     - hoi
+    - uchiha
 
 - intent: goodbye
   examples: |
@@ -29,6 +30,7 @@ nlu:
     - enya
     - heeh
     - hooh
+    - mau
 
 - intent: deny
   examples: |
@@ -141,3 +143,10 @@ nlu:
     - kapan Unsika libur lebaran 2021
     - kapan masuk libur lebaran 2021
     - berapa hari libur lebaran 2021
+
+- intent: saran
+  examples: |
+    - aku ingin memberikan saran
+    - saran untuk aplikasi
+    - saran
+    - mau kasih saran
